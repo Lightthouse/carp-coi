@@ -1,5 +1,7 @@
 # Материалы по машинному обучению karpov
 
-![](images/karp1.jpg)
+![](images/карп.jpg)
+
+
 
 [Start ML](https://lab.karpov.courses/course_catalog/)
