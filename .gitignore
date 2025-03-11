@@ -133,3 +133,4 @@ cython_debug/
 # PyCharm
 .idea/
 
+/введение в мо/1/taxi_dataset.csv
