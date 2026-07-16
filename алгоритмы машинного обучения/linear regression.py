@@ -4,8 +4,17 @@ import random
 
 
 class MyLineReg:
-    def __init__(self, n_iter: int = 100, learning_rate=0.1, weights: list = None, metric: str = None,
-                 reg: str = None, l1_coef: float = 0.0, l2_coef: float = 0.0, sgd_sample=None, random_state=42):
+    def __init__(self,
+                 n_iter: int = 100,
+                 learning_rate=0.1,
+                 weights: list = None,
+                 metric: str = None,
+                 reg: str = None,
+                 l1_coef: float = 0.0,
+                 l2_coef: float = 0.0,
+                 sgd_sample=None,
+                 random_state=42
+                 ):
         self.n_iter = n_iter
         self.learning_rate = learning_rate
         self.weights = weights
@@ -130,7 +139,7 @@ class MyLineReg:
     def predict(self, X: pd.DataFrame):
         X = X.copy()
         X.insert(0, 'x_once', 1.0)
-        return X.values @ self.weights  # возвращаем массив, а не сумму
+        return X.values @ self.weights
 
     def __str__(self):
         return f'MyLineReg class: n_iter={self.n_iter}, learning_rate={self.learning_rate}'
